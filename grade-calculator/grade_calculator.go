@@ -89,8 +89,11 @@ func (gc *GradeCalculator) calculateNumericalGrade() int {
 
 func computeAverage(grades []Grade) int {
 	sum := 0
-	for _, g := range grades {
-		sum += g.Grade
+	if len(grades) == 0 {
+		return 0
+	}
+	for _, grade := range grades {
+		sum += grade.Grade
 	}
 
 	return sum / len(grades)
