@@ -23,9 +23,9 @@ func TestGetGradeB(t *testing.T) {
 
 	gradeCalculator := NewGradeCalculator()
 
-	gradeCalculator.AddGrade("open source assignment", 80, Assignment)
-	gradeCalculator.AddGrade("exam 1", 81, Exam)
-	gradeCalculator.AddGrade("essay on ai ethics", 85, Essay)
+	gradeCalculator.AddGrade("open source assignment", 82, Assignment)
+	gradeCalculator.AddGrade("exam 1", 82, Exam)
+	gradeCalculator.AddGrade("essay on ai ethics", 82, Essay)
 
 	actual_value := gradeCalculator.GetFinalGrade()
 
@@ -39,9 +39,9 @@ func TestGetGradeF(t *testing.T) {
 
 	gradeCalculator := NewGradeCalculator()
 
-	gradeCalculator.AddGrade("open source assignment", 100, Assignment)
-	gradeCalculator.AddGrade("exam 1", 95, Exam)
-	gradeCalculator.AddGrade("essay on ai ethics", 91, Essay)
+	gradeCalculator.AddGrade("open source assignment", 40, Assignment)
+	gradeCalculator.AddGrade("exam 1", 40, Exam)
+	gradeCalculator.AddGrade("essay on ai ethics", 40, Essay)
 
 	actual_value := gradeCalculator.GetFinalGrade()
 
